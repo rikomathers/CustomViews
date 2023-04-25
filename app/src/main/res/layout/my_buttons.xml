@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <Button
+        android:id="@+id/negativeButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="negative button"
+        android:backgroundTint="#959595"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/positiveButton"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/positiveButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="positive button"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/negativeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</merge>
